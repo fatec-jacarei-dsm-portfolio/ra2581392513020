@@ -1,11 +1,245 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - ERIC FRANÇA ARANTES DOS SANTOS</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eric França Arantes — Portfólio</title>
+  <meta name="description" content="Portfólio de Eric França Arantes dos Santos — Estudante de Desenvolvimento de Software Multiplataforma (Fatec Jacareí) e Economista (UNESP). Projetos, certificações e contato." />
+  <meta name="theme-color" content="#0b3d91" />
+  <meta property="og:title" content="Eric França Arantes — Portfólio" />
+  <meta property="og:description" content="Projetos acadêmicos, habilidades, certificações e contato." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" /> 
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de ERIC FRANÇA ARANTES DOS SANTOS</h1>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">EA</div>
+        <span>Eric França Arantes</span>
+      </div>
+      <nav class="links" aria-label="Seções do site">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav-right">
+        <button id="themeBtn" class="theme-toggle" aria-label="Alternar tema">🌓</button>
+        <button id="menuBtn" class="btn ghost menu-toggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+        <a class="btn primary" href="#contato">Fale comigo</a>
+      </div>
+    </div>
+    <div id="mobileMenu" class="container" hidden>
+      <nav class="links" style="display:grid; grid-template-columns: 1fr; gap: 10px; padding-bottom: 12px;">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="inicio">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker">Portfólio</span>
+          <h1>Olá! Sou <span style="background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent;">Eric França Arantes</span> — <wbr>estudante de Desenvolvimento de Software Multiplataforma (Fatec Jacareí) e Economista (UNESP).</h1>
+          <p class="lead">Transição de carreira para TI com base sólida em finanças. Experiência acadêmica em <strong>desenvolvimento web</strong>, <strong>banco de dados</strong> e <strong>metodologias ágeis</strong>. Busco construir soluções úteis, bem estruturadas e focadas no usuário.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn ghost" href="#certificados">Certificados</a>
+            <button class="btn ghost" onclick="window.print()">Versão para impressão</button>
+          </div>
+        </div>
+        <div class="photo" aria-label="Foto profissional">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Crect width='100%25' height='100%25' fill='%23121a2b'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%239ca3af' font-family='Segoe UI, Roboto, Arial' font-size='28'%3ESua foto aqui%3C/text%3E%3C/svg%3E" alt="Foto de perfil" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="container">
+      <h2>Sobre</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Apresentação</h3>
+          <p>Atualmente cursando <strong>Desenvolvimento de Software Multiplataforma</strong> (início: 02/2025) na <strong>Fatec Jacareí</strong> e graduado em <strong>Ciências Econômicas</strong> (03/2022) pela <strong>UNESP</strong>. Trago a experiência e disciplina do mercado financeiro para a construção de software: organização, comunicação clara e foco em resultados.</p>
+          <div class="tags">
+            <span class="tag">Comunicação</span>
+            <span class="tag">Trabalho em equipe</span>
+            <span class="tag">Proatividade</span>
+            <span class="tag">Atenção a detalhes</span>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Contato</h3>
+          <ul class="list" aria-label="Informações de contato">
+            <li class="item"><strong>E-mail:</strong> <span><a href="mailto:ericfranca.dev@gmail.com">ericfranca.dev@gmail.com</a></span></li>
+            <li class="item"><strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/eric-f-arantes" target="_blank" rel="noopener">linkedin.com/in/eric-f-arantes</a></span></li>
+            <li class="item"><strong>Telefone:</strong> <span>(12) 98237-0804</span></li>
+            <li class="item"><strong>Cidade:</strong> <span>Jacareí — SP</span></li>
+          </ul>
+          <div class="spacer"></div>
+          <div class="actions">
+            <a class="btn ghost" href="Curriculo%2026-08-2025.pdf" download>Baixar CV (TI)</a>
+            <a class="btn ghost" href="Curriculo.%20FINAL.pdf" download>Baixar CV (Finanças)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="container">
+      <h2>Projetos em Destaque</h2>
+      <div class="grid" id="projectsGrid" aria-live="polite"></div>
+      <div class="spacer"></div>
+      <div class="actions center">
+        <button class="btn ghost" id="showAll">Ver todos</button>
+        <button class="btn ghost" id="showAcademic">Projetos Acadêmicos</button>
+        <button class="btn ghost" id="showPersonal">Projetos Pessoais</button>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="container">
+      <h2>Habilidades & Tecnologias</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Desenvolvimento</h3>
+          <p>Foco em front-end e fundamentos de back-end com atenção à organização do código, semântica e UX.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Scrum</span>
+            <span class="tag">Linux (básico)</span>
+            <span class="tag">Cisco Packet Tracer</span>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Finanças</h3>
+          <p>Background sólido no setor financeiro, com certificações do mercado e experiência em atendimento e análise.</p>
+          <div class="tags">
+            <span class="tag">CEA</span>
+            <span class="tag">CPA-20</span>
+            <span class="tag">ANCORD</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Comunicação</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="container">
+      <h2>Certificados</h2>
+      <div class="grid">
+        <!-- (mesma lista de cards que já tinha no seu HTML) -->
+        <div class="card col-4">
+          <h3>CEA — ANBIMA</h3>
+          <p>Certificado de Especialista em Investimentos. Emissão: 11/2022 • Validade: 11/2025.</p>
+          <div class="tags"><span class="tag">Finanças</span><span class="tag">Investimentos</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>CPA-20 — ANBIMA</h3>
+          <p>Distribuição de produtos de investimento. Conclusão: 12/2020.</p>
+          <div class="tags"><span class="tag">Finanças</span><span class="tag">Bancário</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>ANCORD</h3>
+          <p>Qualificação técnica para assessor/empregados de intermediárias. Realizado: 03/2023.</p>
+          <div class="tags"><span class="tag">Mercado</span><span class="tag">Intermediação</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Curso de Git</h3>
+          <p>Introdução e fluxo de versionamento. Conclusão: 02/2025.</p>
+          <div class="tags"><span class="tag">Git</span><span class="tag">Controle de versão</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Cisco Packet Tracer</h3>
+          <p>Simulação de redes e fundamentos. Conclusão: 05/2025.</p>
+          <div class="tags"><span class="tag">Redes</span><span class="tag">Cisco</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Linux (NDG)</h3>
+          <p>Comandos básicos e sistema de arquivos. Conclusão: 03/2025.</p>
+          <div class="tags"><span class="tag">Linux</span><span class="tag">CLI</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Excel Básico/Intermediário</h3>
+          <p>Planilhas, fórmulas e gráficos. 2019.</p>
+          <div class="tags"><span class="tag">Excel</span><span class="tag">Office</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Idiomas</h3>
+          <p>Inglês (pré-intermediário) • Espanhol (básico/intermediário). 2019.</p>
+          <div class="tags"><span class="tag">Inglês</span><span class="tag">Espanhol</span></div>
+        </div>
+        <div class="card col-4">
+          <h3>Comunicação</h3>
+          <p>Técnicas de Comunicação Interpessoal (2021) • Oratória (2020).</p>
+          <div class="tags"><span class="tag">Soft skills</span></div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="center">
+        <button class="btn ghost" id="certBtn">Ver lista completa</button>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="container">
+      <h2>Contato</h2>
+      <div class="grid">
+        <div class="card col-6">
+          <h3>Vamos conversar?</h3>
+          <p>Aberto a oportunidades de estágio/trainee em TI e a colaborar em projetos acadêmicos. Entre em contato por e-mail ou LinkedIn — respondo com rapidez.</p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:ericfranca.dev@gmail.com">Enviar e-mail</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/eric-f-arantes" target="_blank" rel="noopener">Abrir LinkedIn</a>
+          </div>
+        </div>
+        <div class="card col-6">
+          <h3>Links úteis</h3>
+          <ul class="list">
+            <li class="item"><strong>CV (TI):</strong> <span><a href="Curriculo%2026-08-2025.pdf" download>Download</a></span></li>
+            <li class="item"><strong>CV (Finanças):</strong> <span><a href="Curriculo.%20FINAL.pdf" download>Download</a></span></li>
+            <li class="item"><strong>GitHub:</strong> <span><em>adicione aqui quando quiser</em></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <p>© <span id="year"></span> Eric França Arantes — Portfólio acadêmico. Construído com HTML, CSS e JavaScript (client-side).</p>
+    </footer>
+  </main>
+
+  <!-- Certificates modal -->
+  <dialog id="certModal" aria-labelledby="certTitle">
+    <div class="modal">
+      <header class="nav">
+        <h3 id="certTitle">Lista detalhada de certificados</h3>
+        <button id="closeModal" class="theme-toggle" aria-label="Fechar">✕</button>
+      </header>
+      <div class="container">
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+      <div class="spacer"></div>
+    </div>
+  </dialog>
+
+  <button id="toTop" class="btn primary" style="position: fixed; right: 16px; bottom: 16px; display:none;">↑ Topo</button>
+
+
+ <script src="js/script.js"></script>
 </body>
 </html>
