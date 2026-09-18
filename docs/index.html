@@ -1,245 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eric França Arantes — Portfólio</title>
-  <meta name="description" content="Portfólio de Eric França Arantes dos Santos — Estudante de Desenvolvimento de Software Multiplataforma (Fatec Jacareí) e Economista (UNESP). Projetos, certificações e contato." />
-  <meta name="theme-color" content="#0b3d91" />
-  <meta property="og:title" content="Eric França Arantes — Portfólio" />
-  <meta property="og:description" content="Projetos acadêmicos, habilidades, certificações e contato." />
-  <meta property="og:type" content="website" />
-
-  <link rel="stylesheet" href="css/style.css" /> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio acadêmico de Eric França Arantes dos Santos, estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí.">
+  <meta name="theme-color" content="#f4f1e9">
+  <title>Eric França — Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="container nav" role="navigation" aria-label="Principal">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">EA</div>
-        <span>Eric França Arantes</span>
-      </div>
-      <nav class="links" aria-label="Seções do site">
-        <a href="#sobre">Sobre</a>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#inicio" aria-label="Eric França, início"><span class="wordmark-icon" aria-hidden="true">e<span class="wordmark-dot">.</span></span><span>Eric França<br><small>PORTFÓLIO / DSM</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#contato">Contato</a>
-      </nav>
-      <div class="nav-right">
-        <button id="themeBtn" class="theme-toggle" aria-label="Alternar tema">🌓</button>
-        <button id="menuBtn" class="btn ghost menu-toggle" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
-        <a class="btn primary" href="#contato">Fale comigo</a>
-      </div>
-    </div>
-    <div id="mobileMenu" class="container" hidden>
-      <nav class="links" style="display:grid; grid-template-columns: 1fr; gap: 10px; padding-bottom: 12px;">
         <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#contato">Contato</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
+        <a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero container" id="inicio">
-      <div class="hero-grid">
-        <div>
-          <span class="kicker">Portfólio</span>
-          <h1>Olá! Sou <span style="background: linear-gradient(90deg, var(--primary), var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent;">Eric França Arantes</span> — <wbr>estudante de Desenvolvimento de Software Multiplataforma (Fatec Jacareí) e Economista (UNESP).</h1>
-          <p class="lead">Transição de carreira para TI com base sólida em finanças. Experiência acadêmica em <strong>desenvolvimento web</strong>, <strong>banco de dados</strong> e <strong>metodologias ágeis</strong>. Busco construir soluções úteis, bem estruturadas e focadas no usuário.</p>
-          <div class="actions">
-            <a class="btn primary" href="#projetos">Ver projetos</a>
-            <a class="btn ghost" href="#certificados">Certificados</a>
-            <button class="btn ghost" onclick="window.print()">Versão para impressão</button>
+  <main id="conteudo">
+    <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PORTFÓLIO ACADÊMICO · 2025—2026</p>
+        <h1 id="hero-title">Ideias claras.<br><em>Interfaces úteis.</em></h1>
+        <p class="hero-intro">Sou Eric França. Minha trajetória une Economia, experiência com sistemas empresariais e formação em Desenvolvimento de Software. Hoje me dedico ao frontend e ao design de interfaces para tornar processos complexos mais claros para quem usa.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#sobre">Conheça minha trajetória <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span>4º SEMESTRE · DSM</span><span>JACAREÍ, SP</span></div>
+      </div>
+      <figure class="hero-portrait">
+        <div class="portrait-frame"><img src="img/foto-perfil.png" alt="Retrato de Eric França" width="480" height="580"></div>
+        <figcaption><span>01 / EM CONSTRUÇÃO CONTÍNUA</span><span aria-hidden="true">✳</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="projects-section" id="projetos" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-heading"><p class="section-kicker">01 / PROJETOS ACADÊMICOS</p><div><h2 id="projects-title">Projetos que<br><em>ganharam forma.</em></h2><p>Aprendizagem baseada em projetos, colaboração e decisões de interface que saíram do papel.</p></div></div>
+        <div class="project-list">
+          <article class="project" aria-labelledby="project-3-title">
+            <div class="project-rail"><span class="project-number">03</span><span class="project-period">3DSM<br>2026 · 1º SEM.</span></div>
+            <div class="project-main"><p class="project-type">ABP / CRM E VENDAS</p><h3 id="project-3-title">1000 Valle Multimarcas<br><em>Gestão de Leads</em></h3><p class="project-description">Sistema para centralizar e acompanhar leads, negociações e indicadores de vendas de uma revendedora de veículos.</p><div class="contribution"><span>MINHA CONTRIBUIÇÃO</span><p>Contribuí para o design das interfaces e dos fluxos de navegação no Figma, participei do desenvolvimento do frontend — especialmente nas páginas de leads e dashboards e nas interfaces de autorização — e auxiliei na documentação do projeto.</p></div><div class="project-bottom"><p><strong>Tecnologias</strong> Figma · React · TypeScript · Vite · Tailwind CSS · Node.js · PostgreSQL · Docker</p><a class="project-link" href="https://github.com/CRIMS0NC0DE/3DSM-ABP-2026-1" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório do projeto 3DSM no GitHub">Ver repositório <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="project" aria-labelledby="project-2-title">
+            <div class="project-rail"><span class="project-number">02</span><span class="project-period">2DSM<br>2025 · 2º SEM.</span></div>
+            <div class="project-main"><p class="project-type">ABP / DADOS AMBIENTAIS</p><h3 id="project-2-title">Dados limnológicos<br><em>e meteorológicos</em></h3><p class="project-description">Aplicação web para disponibilizar dados de reservatórios, reunindo informações de monitoramento e campanhas de campo.</p><div class="contribution"><span>MINHA CONTRIBUIÇÃO</span><p>Contribuí para o design das interfaces e dos fluxos de navegação no Figma, participei do desenvolvimento do frontend e auxiliei na documentação do projeto.</p></div><div class="project-bottom"><p><strong>Tecnologias</strong> Figma · JavaScript · TypeScript · React · Node.js · SQL · Docker</p><a class="project-link" href="https://github.com/CRIMS0NC0DE/abp-2025-2" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório do projeto 2DSM no GitHub">Ver repositório <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="project" aria-labelledby="project-1-title">
+            <div class="project-rail"><span class="project-number">01</span><span class="project-period">1DSM<br>2025 · 1º SEM.</span></div>
+            <div class="project-main"><p class="project-type">ABP / EDUCAÇÃO</p><h3 id="project-1-title">Sistema Web de<br><em>Horários Acadêmicos</em></h3><p class="project-description">Aplicação web para consultar horários acadêmicos com filtros por curso, ambiente, turno e turma, exibindo salas, disciplinas e professores.</p><div class="contribution"><span>MINHA CONTRIBUIÇÃO</span><p>Fui responsável por todo o frontend, desenvolvendo as telas, a navegação e as interações para consultar horários e ambientes.</p></div><div class="project-bottom"><p><strong>Tecnologias</strong> HTML · CSS · JavaScript · MySQL</p><a class="project-link" href="https://github.com/CodeMasters-dsm/Projeto" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório do projeto 1DSM no GitHub">Ver repositório <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+        <p class="projects-note">O projeto de ABP do 4º semestre ainda não começou. Ele será incluído aqui quando houver trabalho para apresentar.</p>
+      </div>
+    </section>
+
+    <section class="about-section shell" id="sobre" aria-labelledby="about-title"><div class="section-heading"><p class="section-kicker">02 / SOBRE MIM</p><div><h2 id="about-title">Entre números<br><em>e interfaces.</em></h2></div></div><div class="about-grid"><p class="about-lead">Antes de desenhar uma tela, procuro entender o trabalho que ela precisa facilitar.</p><div class="about-body"><p>Sou formado em Ciências Econômicas pela UNESP e estudante do 4º semestre de Desenvolvimento de Software Multiplataforma na Fatec Jacareí. Minha trajetória profissional começou no mercado financeiro e passou a incluir o contato direto com sistemas empresariais, seus dados, integrações e regras de negócio.</p><p>Na faculdade, atuo também na construção das soluções: desenvolvi todo o frontend do projeto de horários acadêmicos e, nos projetos seguintes, contribuí com interfaces, fluxos no Figma e documentação. Conhecer tanto os problemas de quem usa um sistema quanto o processo de construí-lo orienta meu interesse em frontend, design de interfaces e produtos para empresas.</p></div></div></section>
+
+    <section class="experience-section" id="experiencia" aria-labelledby="experience-title"><div class="shell"><div class="section-heading"><p class="section-kicker">03 / EXPERIÊNCIA PROFISSIONAL</p><div><h2 id="experience-title">O software<br><em>depois da entrega.</em></h2><p>Trabalhar com sistemas em uso por empresas me ensinou a investigar o problema antes de propor uma solução.</p></div></div><div class="experience-grid"><div class="experience-item"><span>01 / INVESTIGAÇÃO</span><h3>Entender a causa</h3><p>Uso consultas SQL, configurações e regras de negócio para investigar problemas relatados por usuários, identificar causas e validar correções.</p></div><div class="experience-item"><span>02 / INTEGRAÇÕES</span><h3>Conectar as peças</h3><p>Acompanho integrações fiscais e bancárias e investigo falhas com apoio de XML, APIs e documentos eletrônicos.</p></div><div class="experience-item"><span>03 / COMUNICAÇÃO</span><h3>Traduzir o problema</h3><p>Transformo relatos de clientes em informações técnicas para a equipe de desenvolvimento e participo da validação das soluções.</p></div></div></div></section>
+
+    <section class="learning-section" id="formacao" aria-labelledby="learning-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="section-kicker">04 / FORMAÇÃO & REPERTÓRIO</p>
+          <div><h2 id="learning-title">O que trago<br><em>para o trabalho.</em></h2></div>
+        </div>
+        <div class="learning-grid">
+          <div class="learning-column">
+            <h3>Formação</h3>
+            <div class="learning-item"><span>EM CURSO · DESDE 2025</span><p>Desenvolvimento de Software Multiplataforma</p><small>Fatec Jacareí · 4º semestre</small></div>
+            <div class="learning-item"><span>CONCLUÍDO · 2022</span><p>Ciências Econômicas</p><small>UNESP</small></div>
+          </div>
+          <div class="learning-column">
+            <h3>Ferramentas & práticas</h3>
+            <p class="learning-prose"><strong>Nos projetos:</strong> Figma, HTML, CSS, JavaScript, TypeScript, React e Git para prototipar, desenvolver e organizar interfaces.</p>
+            <p class="learning-prose"><strong>No trabalho:</strong> SQL para investigar dados e problemas; XML, APIs e integrações fiscais e bancárias para compreender o funcionamento dos sistemas.</p>
+          </div>
+          <div class="learning-column">
+            <h3>Idiomas</h3>
+            <div class="language-row"><span>Português</span><strong>Nativo</strong></div>
+            <div class="language-row"><span>Inglês</span><strong>Pré-intermediário</strong></div>
+            <div class="language-row"><span>Espanhol</span><strong>Básico / intermediário</strong></div>
           </div>
         </div>
-        <div class="photo" aria-label="Foto profissional">
-          <img src="img/foto-perfil.png" alt="Foto de perfil" />
+
+        <div class="credentials" aria-labelledby="credentials-title">
+          <div class="credentials-heading">
+            <div><p class="section-kicker">FORMAÇÃO COMPLEMENTAR</p><h3 id="credentials-title">Certificações <em>&</em> cursos</h3></div>
+            <p>Da experiência em finanças aos estudos que acompanham minha formação em tecnologia.</p>
+          </div>
+          <div class="credentials-grid">
+            <article class="credential-card"><span class="credential-type">FINANÇAS / 01</span><h4>CEA — ANBIMA</h4><p>Certificação de Especialista em Investimentos.</p><small>Emitida em 11/2022 · Validade renovada até 12/2026</small></article>
+            <article class="credential-card"><span class="credential-type">FINANÇAS / 02</span><h4>CPA-20 — ANBIMA</h4><p>Distribuição de produtos de investimento.</p><small>Concluída em 12/2020</small></article>
+            <article class="credential-card"><span class="credential-type">FINANÇAS / 03</span><h4>ANCORD</h4><p>Qualificação técnica para o mercado de intermediação.</p><small>Realizada em 03/2023</small></article>
+            <article class="credential-card"><span class="credential-type">TECNOLOGIA / 01</span><h4>Curso de Git</h4><p>Versionamento e fluxo de trabalho com Git.</p><small>Concluído em 02/2025</small></article>
+            <article class="credential-card"><span class="credential-type">TECNOLOGIA / 02</span><h4>Cisco Packet Tracer</h4><p>Fundamentos de redes e simulação.</p><small>Concluído em 05/2025</small></article>
+            <article class="credential-card"><span class="credential-type">TECNOLOGIA / 03</span><h4>Linux (NDG)</h4><p>Comandos básicos e sistema de arquivos.</p><small>Concluído em 03/2025</small></article>
+          </div>
+          <p class="credentials-more"><strong>Outros estudos:</strong> Excel básico/intermediário (2019) · Comunicação Interpessoal, Dorie Clark (03/2021) · Oratória, Prof. Felipe Guedes (12/2020).</p>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="container">
-      <h2>Sobre</h2>
-      <div class="grid">
-        <div class="card col-6">
-          <h3>Apresentação</h3>
-          <p>Atualmente cursando <strong>Desenvolvimento de Software Multiplataforma</strong> (início: 02/2025) na <strong>Fatec Jacareí</strong> e graduado em <strong>Ciências Econômicas</strong> (03/2022) pela <strong>UNESP</strong>. Trago a experiência e disciplina do mercado financeiro para a construção de software: organização, comunicação clara e foco em resultados.</p>
-          <div class="tags">
-            <span class="tag">Comunicação</span>
-            <span class="tag">Trabalho em equipe</span>
-            <span class="tag">Proatividade</span>
-            <span class="tag">Atenção a detalhes</span>
-          </div>
-        </div>
-        <div class="card col-6">
-          <h3>Contato</h3>
-          <ul class="list" aria-label="Informações de contato">
-            <li class="item"><strong>E-mail:</strong> <span><a href="mailto:ericfranca.dev@gmail.com">ericfranca.dev@gmail.com</a></span></li>
-            <li class="item"><strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/eric-f-arantes" target="_blank" rel="noopener">linkedin.com/in/eric-f-arantes</a></span></li>
-            <li class="item"><strong>Telefone:</strong> <span>(12) 98237-0804</span></li>
-            <li class="item"><strong>Cidade:</strong> <span>Jacareí — SP</span></li>
-          </ul>
-          <div class="spacer"></div>
-          <div class="actions">
-          <a class="btn ghost" href="docs/Curriculo_TI.pdf" download>Baixar CV (TI)</a>
-          <a class="btn ghost" href="docs/Curriculo_Financas.pdf" download>Baixar CV (Finanças)</a> 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="container">
-      <h2>Projetos em Destaque</h2>
-      <div class="grid" id="projectsGrid" aria-live="polite"></div>
-      <div class="spacer"></div>
-      <div class="actions center">
-        <button class="btn ghost" id="showAll">Ver todos</button>
-        <button class="btn ghost" id="showAcademic">Projetos Acadêmicos</button>
-        <button class="btn ghost" id="showPersonal">Projetos Pessoais</button>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="container">
-      <h2>Habilidades & Tecnologias</h2>
-      <div class="grid">
-        <div class="card col-6">
-          <h3>Desenvolvimento</h3>
-          <p>Foco em front-end e fundamentos de back-end com atenção à organização do código, semântica e UX.</p>
-          <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">Scrum</span>
-            <span class="tag">Linux (básico)</span>
-            <span class="tag">Cisco Packet Tracer</span>
-          </div>
-        </div>
-        <div class="card col-6">
-          <h3>Finanças</h3>
-          <p>Background sólido no setor financeiro, com certificações do mercado e experiência em atendimento e análise.</p>
-          <div class="tags">
-            <span class="tag">CEA</span>
-            <span class="tag">CPA-20</span>
-            <span class="tag">ANCORD</span>
-            <span class="tag">Excel</span>
-            <span class="tag">Comunicação</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICADOS -->
-    <section id="certificados" class="container">
-      <h2>Certificados</h2>
-      <div class="grid">
-        <!-- (mesma lista de cards que já tinha no seu HTML) -->
-        <div class="card col-4">
-          <h3>CEA — ANBIMA</h3>
-          <p>Certificado de Especialista em Investimentos. Emissão: 11/2022 • Validade: 11/2025.</p>
-          <div class="tags"><span class="tag">Finanças</span><span class="tag">Investimentos</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>CPA-20 — ANBIMA</h3>
-          <p>Distribuição de produtos de investimento. Conclusão: 12/2020.</p>
-          <div class="tags"><span class="tag">Finanças</span><span class="tag">Bancário</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>ANCORD</h3>
-          <p>Qualificação técnica para assessor/empregados de intermediárias. Realizado: 03/2023.</p>
-          <div class="tags"><span class="tag">Mercado</span><span class="tag">Intermediação</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Curso de Git</h3>
-          <p>Introdução e fluxo de versionamento. Conclusão: 02/2025.</p>
-          <div class="tags"><span class="tag">Git</span><span class="tag">Controle de versão</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Cisco Packet Tracer</h3>
-          <p>Simulação de redes e fundamentos. Conclusão: 05/2025.</p>
-          <div class="tags"><span class="tag">Redes</span><span class="tag">Cisco</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Linux (NDG)</h3>
-          <p>Comandos básicos e sistema de arquivos. Conclusão: 03/2025.</p>
-          <div class="tags"><span class="tag">Linux</span><span class="tag">CLI</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Excel Básico/Intermediário</h3>
-          <p>Planilhas, fórmulas e gráficos. 2019.</p>
-          <div class="tags"><span class="tag">Excel</span><span class="tag">Office</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Idiomas</h3>
-          <p>Inglês (pré-intermediário) • Espanhol (básico/intermediário). 2019.</p>
-          <div class="tags"><span class="tag">Inglês</span><span class="tag">Espanhol</span></div>
-        </div>
-        <div class="card col-4">
-          <h3>Comunicação</h3>
-          <p>Técnicas de Comunicação Interpessoal (2021) • Oratória (2020).</p>
-          <div class="tags"><span class="tag">Soft skills</span></div>
-        </div>
-      </div>
-      <div class="spacer"></div>
-      <div class="center">
-        <button class="btn ghost" id="certBtn">Ver lista completa</button>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="container">
-      <h2>Contato</h2>
-      <div class="grid">
-        <div class="card col-6">
-          <h3>Vamos conversar?</h3>
-          <p>Aberto a oportunidades de estágio/trainee em TI e a colaborar em projetos acadêmicos. Entre em contato por e-mail ou LinkedIn — respondo com rapidez.</p>
-          <div class="actions">
-            <a class="btn primary" href="mailto:ericfranca.dev@gmail.com">Enviar e-mail</a>
-            <a class="btn ghost" href="https://www.linkedin.com/in/eric-f-arantes" target="_blank" rel="noopener">Abrir LinkedIn</a>
-          </div>
-        </div>
-        <div class="card col-6">
-          <h3>Links úteis</h3>
-          <ul class="list">
-            <li class="item"><strong>CV (TI):</strong> <span><a href="Curriculo%2026-08-2025.pdf" download>Download</a></span></li>
-            <li class="item"><strong>CV (Finanças):</strong> <span><a href="Curriculo.%20FINAL.pdf" download>Download</a></span></li>
-            <li class="item"><strong>GitHub:</strong> <span><em>adicione aqui quando quiser</em></span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer class="container">
-      <p>© <span id="year"></span> Eric França Arantes — Portfólio acadêmico. Construído com HTML, CSS e JavaScript (client-side).</p>
-    </footer>
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="shell contact-inner"><p class="section-kicker">05 / CONTATO</p><h2 id="contact-title">Vamos conversar<span class="contact-star" aria-hidden="true">✳</span><br><em>sobre ideias?</em></h2><p>Estou aberto a conexões profissionais e oportunidades em frontend, design de interfaces e sistemas empresariais.</p><div class="contact-links"><a href="https://github.com/Ericfranca90" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/eric-f-arantes" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></section>
   </main>
-
-  <!-- Certificates modal -->
-  <dialog id="certModal" aria-labelledby="certTitle">
-    <div class="modal">
-      <header class="nav">
-        <h3 id="certTitle">Lista detalhada de certificados</h3>
-        <button id="closeModal" class="theme-toggle" aria-label="Fechar">✕</button>
-      </header>
-      <div class="container">
-        <div class="cert-grid" id="certGrid"></div>
-      </div>
-      <div class="spacer"></div>
-    </div>
-  </dialog>
-
-  <button id="toTop" class="btn primary" style="position: fixed; right: 16px; bottom: 16px; display:none;">↑ Topo</button>
-
-
- <script src="js/script.js"></script>
+  <footer class="site-footer"><div class="shell footer-inner"><span>Eric França © <span id="year">2026</span></span><span>Feito em Jacareí, SP · Portfólio acadêmico DSM</span><a href="#inicio">Voltar ao topo ↑</a></div></footer>
 </body>
 </html>

@@ -1,12 +1,21 @@
-# ra2581392513020
-
 # Portfólio de Projetos - Fatec Jacareí
-### Aluno: Eric França Arantes dos Santos
-### Curso: Desenvolvimento de Software Multiplataforma
-### Turma: 1o. Semestre de 2025
- 
+
+**Aluno:** Eric França Arantes dos Santos\
+**Curso:** Desenvolvimento de Software Multiplataforma\
+**Turma:** 1º semestre de 2025
+
 ---
 
-### Portfólio Online  
-🔗 [Acesse o Portfólio](https://ericfranca90.github.io/ra2581392513020/)
-🎤 [Pitch de Apresentação (vídeo)](https://youtu.be/m0SsXBgQeJE)
+**Portfólio Online**
+
+🔗 [Acesse o Portfólio](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392513020/)
+
+---
+
+**Vídeos de Apresentação**
+
+🎤 2DSM - [Vídeo](https://youtu.be/m0SsXBgQeJE)\
+🎤 4DSM - A produzir após a ABP do 4DSM\
+🎤 6DSM - A produzir
+
+**Apresentação do portfólio antes da ABP do 4DSM:** [Assista ao vídeo](https://youtu.be/a5kAFY9l2_M)
